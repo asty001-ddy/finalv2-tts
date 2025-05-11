@@ -1,0 +1,7 @@
+initialise
+export COQUI_TOS_AGREED=1
+export PYTHONPATH=$PYTHONPATH:/chunking-test/trainer
+This tells Python to include /chunking-test/trainer in its module search path, so it can resolve imports like:
+
+from trainer.torch import DistributedSampler
+
